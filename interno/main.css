@@ -84,11 +84,13 @@ a{
     animation-name: but1;
     animation-duration: 0.8s;
     position: relative;
+    transition: .2s;
 }
 
 
 .but-1:active  {
-    box-shadow: 0px 0px 10px -1px #000000;}  
+    box-shadow: 0px 0px 10px -1px #000000;
+}  
 
 @keyframes but1{
     0%   {   opacity: 0.1; left: -40px;}
@@ -99,6 +101,7 @@ a{
 .arrow2{
     padding-left: 40px;
     height: 36px;
+    transition: .2s;
 }
 
 .but-1:active>.arrow2{
@@ -191,7 +194,7 @@ a{
 
 
 .conteiner-3{
-    margin-top: 105px;
+    margin-top: 15px;
     width: min(100%, 1280px);
     margin-inline: auto;
 }

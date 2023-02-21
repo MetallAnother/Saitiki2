@@ -37,7 +37,7 @@ document.querySelector('.carta2').onclick = function () {
         document.getElementsByClassName('t')[0].style.display = 'flex';
         b=1
     }
-  }    
+}    
 document.querySelector('.carta3').onclick = function () {
     if(c == 1){
         this.style.transform = `rotateY(${this.d = (this.d | 0) + 180}deg)`;

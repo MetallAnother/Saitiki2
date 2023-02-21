@@ -1,0 +1,45 @@
+let cirkls = document.querySelectorAll('.cir');
+let circo = 0;
+let circo2 = -1;
+
+
+
+console.log(cirkls);
+
+
+
+
+document.querySelector('.but-slid-2').addEventListener('click', () => {
+    c = c + 1020 ;
+    circo += 1;
+    circo2 = circo - 1;
+    if (c == 3060) {
+        document.querySelector(".but-slid-2").disabled = true;
+    }
+    document.querySelector(".but-slid-1").disabled = false;
+
+    cirkls[circo2].style.backgroundColor = "#D8D8D8";
+    cirkls[circo].style.backgroundColor = "#E89F71";
+
+    slin.style.left = -c + 'px' ;
+    console.log(c)
+    console.log(circo)
+    console.log(circo2)
+})
+document.querySelector('.but-slid-1').addEventListener('click', () => {
+    c = c - 1020 ;
+    circo -= 1;
+    circo2 = circo + 2;
+    circo2 -= 1;
+    if (c == 0) {
+        document.querySelector(".but-slid-1").disabled = true;
+    }
+    cirkls[circo2].style.backgroundColor = "#D8D8D8";
+    cirkls[circo].style.backgroundColor = "#E89F71";
+    document.querySelector(".but-slid-2").disabled = false;
+
+    slin.style.left = -c + 'px' ;
+    console.log(c)
+    console.log(circo)
+    console.log(circo2+'c2')
+})

@@ -75,7 +75,6 @@ body{
 
 
 
-
 .centr{
     height: 3600px;
 }
@@ -92,6 +91,7 @@ body{
     width: min(100%, 900px);
     height: 205px;
     font-size: 59px;
+    /* font-weight: 100; */
 }
 
 .rectangle9{
